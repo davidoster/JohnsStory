@@ -21,7 +21,7 @@ public class JohnsStory {
 //        Building building = new Building(); CAN'T DO IT?
         Building myHouse = new House();
         System.out.println("------------------");
-        House myHouse2 = new House();
+//        House myHouse2 = new House();
     }
     
 }
