@@ -14,7 +14,7 @@ public class Human {
 
     public Human(String name) {
         this.name = name;
-        System.out.println("This is the human " + this.name);
+        System.out.println("This is the human " + this.name); // inside the mainHouse
     }
 
     public Human() {

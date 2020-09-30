@@ -10,7 +10,7 @@ package models;
  * @author user
  */
 public class MainHouse {
-    
+    String name;
     
     public MainHouse() {
         System.out.println("This is the main house!");
@@ -19,7 +19,7 @@ public class MainHouse {
     
     public MainHouse(Human human) {
         System.out.println("This is the main house!");
-        human = new Human("Johnny");
+        human = new Human("Johnny"); //new Human("Johnny", this.name) change overloaded constructor so it takes the name of the mainHouse
     }
     
 }
