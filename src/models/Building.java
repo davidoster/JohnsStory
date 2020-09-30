@@ -5,6 +5,8 @@
  */
 package models;
 
+import java.util.List;
+
 /**
  *
  * @author user
@@ -12,6 +14,8 @@ package models;
  public abstract class Building {
      private MainHouse mainHouse;
      private Garden garden;
+     private Human human;
+     private List<Animal> animals;
      // door
      
     public Building(){
@@ -41,4 +45,20 @@ package models;
     
     public abstract void someOtherMethod();
     abstract void someOtherMethod2();
+
+    public Human getHuman() {
+        return human;
+    }
+
+    public void setHuman(Human human) {
+        this.human = human;
+    }
+
+    public List<Animal> getAnimals() {
+        return animals;
+    }
+
+    public void setAnimals(List<Animal> animals) {
+        this.animals = animals;
+    }
 }
