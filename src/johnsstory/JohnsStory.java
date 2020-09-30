@@ -6,6 +6,7 @@
 package johnsstory;
 
 import models.Building;
+import models.House;
 
 /**
  *
@@ -17,7 +18,9 @@ public class JohnsStory {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Building myHouse = new Building();
+//        Building building = new Building(); CAN'T DO IT?
+        Building myHouse = new House();
+        //House myHouse2 = new House();
     }
     
 }

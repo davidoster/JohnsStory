@@ -10,9 +10,31 @@ package models;
  * @author user
  */
  public abstract class Building {
-     MainHouse mainHouse;
-     Garden garden;
+     private MainHouse mainHouse;
+     private Garden garden;
      // door
+     
+    public Building(){
+        System.out.println("This is a building");
+        
+    }
+    
+    public MainHouse getMainHouse() {
+        return(this.mainHouse);
+    }
+    
+    public void setMainHouse(MainHouse mainHouse) {
+        this.mainHouse = mainHouse;
+    }
+    
+    public Garden getGarden() {
+        return(this.garden);
+    }
+    
+    public void setGarden(Garden garden) {
+        this.garden = garden;
+    }
+    
     public void someMethod() {
         System.out.println("sdfsdf");
     }

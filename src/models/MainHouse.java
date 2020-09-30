@@ -11,4 +11,8 @@ package models;
  */
 public class MainHouse {
     
+    public MainHouse() {
+        System.out.println("This is the main house!");
+    }
+    
 }

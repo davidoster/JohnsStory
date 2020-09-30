@@ -11,4 +11,8 @@ package models;
  */
 public class Garden {
     
+    public Garden() {
+        System.out.println("This is the garden!");
+    }
+    
 }

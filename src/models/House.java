@@ -10,6 +10,12 @@ package models;
  * @author user
  */
 public class House extends Building {
+    
+    public House() {
+        System.out.println("This is the house!!!");
+        this.setMainHouse(new MainHouse()); // house decides when the mainHouse is constructed
+        this.setGarden(new Garden());
+    }
 
     @Override
     public void someOtherMethod() {
