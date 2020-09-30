@@ -11,8 +11,15 @@ package models;
  */
 public class MainHouse {
     
+    
     public MainHouse() {
         System.out.println("This is the main house!");
+        //this.setHuman(new Human("Johnny"));
+    }
+    
+    public MainHouse(Human human) {
+        System.out.println("This is the main house!");
+        human = new Human("Johnny");
     }
     
 }

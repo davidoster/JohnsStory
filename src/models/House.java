@@ -14,7 +14,7 @@ public class House extends Building {
     public House() {
         super();
         System.out.println("This is the house!!!");
-        this.setMainHouse(new MainHouse()); // house decides when the mainHouse is constructed
+        this.setMainHouse(new MainHouse(this.getHuman())); // house decides when the mainHouse is constructed
         this.setGarden(new Garden());
     }
 
