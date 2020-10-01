@@ -5,14 +5,23 @@
  */
 package models;
 
+import java.util.List;
+
 /**
  *
  * @author user
  */
 public class Garden {
+    String name;
     
     public Garden() {
-        System.out.println("This is the garden!");
+        this.name = "garden";
+        System.out.println("This is the " + this.name);
+    }
+    
+    public Garden(List<Animal> animals) {
+        this();
+        animals.add(new Animal("Tom", this.name));
     }
     
 }
