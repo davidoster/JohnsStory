@@ -31,8 +31,9 @@ public class MainHouse {
         this.name = "This is the main house!";
         System.out.println(this.name);
         human = new Human("Johnny", this.name); //new Human("Johnny", this.name) change overloaded constructor so it takes the name of the mainHouse
-        animals = new ArrayList<Animal>();
+//        animals = new ArrayList<Animal>();
         animals.add(new Animal("Ann", this.name));
+        System.out.println(animals);
     }
     
 }

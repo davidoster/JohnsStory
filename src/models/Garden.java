@@ -5,6 +5,7 @@
  */
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,7 +22,9 @@ public class Garden {
     
     public Garden(List<Animal> animals) {
         this();
-        animals.add(new Animal("Tom", this.name));
+        Animal animal = new Animal("Tom", this.name);
+        animals.add(animal);
+        System.out.println(animals);
     }
     
 }
