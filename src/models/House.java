@@ -5,6 +5,9 @@
  */
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author user
@@ -14,6 +17,8 @@ public class House extends Building {
     public House() {
         super();
         System.out.println("This is the house!!!");
+        List<Animal> animals = new ArrayList<Animal>();
+        this.setAnimals(animals);
         this.setMainHouse(new MainHouse(this.getHuman(), this.getAnimals())); // house decides when the mainHouse is constructed
         this.setGarden(new Garden(this.getAnimals()));
     }
