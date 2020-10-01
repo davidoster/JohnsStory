@@ -14,6 +14,12 @@ public class Animal {
 
     public Animal(String name) {
         this.name = name;
+        System.out.println("This is the animal " + this.name);
+    }
+    
+    public Animal(String name, String houseName) {
+        this.name = name;
+        System.out.println("This is the animal " + this.name + " inside " + houseName);
     }
 
     public Animal() {

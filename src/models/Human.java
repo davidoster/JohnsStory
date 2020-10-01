@@ -12,9 +12,9 @@ package models;
 public class Human {
     private String name;
 
-    public Human(String name) {
+    public Human(String name, String houseName) {
         this.name = name;
-        System.out.println("This is the human " + this.name); // inside the mainHouse
+        System.out.println("This is the human " + this.name + " inside " + houseName); // inside the mainHouse
     }
 
     public Human() {
